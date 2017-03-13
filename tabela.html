@@ -11,13 +11,19 @@
 	<p>Tabelas vão expor dados de múltimplas dimensões</p>
 	<table border="1">
 	<!-- tr table Row -->
-		<tr>
-		<!-- th table head -->
-			<th>Console</th>
-			<th>Ano Lançamento</th>
-			<th>Preço</th></tr>
-		<tr>
+		<thead>
+			<tr>
+			<!-- th table header -->
+				<th>Console</th>
+				<th>Ano Lançamento</th>
+				<th>Preço</th>
+			</tr>
+			
+		</thead>
+		
+		<tbody>
 		<!-- td table data -->
+		<tr>
 			<td>XBox 360</td>
 			<td>2006</td>				
 			<td>R$1200,00</td>
@@ -36,6 +42,14 @@
 			<td>2014</td>
 			<td>R$1300,00</td>
 		</tr>
+		</tbody>
+		
+		<tfoot>
+		<!--  no braek space  para adicionar um espaço na celula em branco &nbsp -->
+			<td></td>
+			<td></td>
+			<td>1600,00</td>
+		</tfoot>
 	</table>	
 </body>
 </html>
