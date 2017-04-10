@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Estilos 04</title>
+	<style>
+		ul > li{
+			color:blue;
+		}
+		ol > li{
+			color:violet;
+		}
+		ol > li.menino{
+			color:red;
+		}
+		li.perdido{
+			text-decoration: line-through;
+		}
+		li#margarida{
+			font-weight: bold;
+			color: green;
+		}
+		li#pateta{
+			color: black;
+			font-weight: bold;
+
+		}
+		
+		tr:nth-child(odd){
+			background-color: green;
+		}
+		td:nth-child(odd){
+			background-color: red;
+		}
+		/* td:last-child{
+			color: violet;
+		} */
+	</style>
+</head>
+<body>
+ <h1>Estilo 04</h1>
+ 	<ul>
+ 		<li>Huguinho</li>
+ 		<li class="perdido">Zezinho</li>
+ 		<li>Luizinho</li>
+ 	</ul>
+ 	<ol>
+ 		<li class="perdido">Miney</li>
+ 		<li id="margarida">Margarida</li>
+ 		<li id="pateta" class="menino perdido">Pateta</li>
+ 	</ol>
+
+ 	<table>
+ 		<tbody>
+ 			<tr>
+ 				<td>A1</td>
+ 				<td>B1</td>
+ 				<td>C1</td>
+ 			</tr>
+ 			<tr>
+ 				<td>A2</td>
+ 				<td>B2</td>
+ 				<td>C2</td>
+ 			</tr>
+ 			<tr>
+ 				<td>A3</td>
+ 				<td>B3</td>
+ 				<td>C3</td>
+ 			</tr><tr>
+ 				<td>A4</td>
+ 				<td>B4</td>
+ 				<td>C4</td>
+ 			</tr>
+ 			<tr>
+ 				<td>A5</td>
+ 				<td>B5</td>
+ 				<td>C5</td>
+ 			</tr>
+ 		</tbody>
+ 	</table>
+
+</body>
+</html>
