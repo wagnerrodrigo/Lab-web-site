@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tabuleitos</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.tabuleiro{
+			width: 66px;
+			height: 66px;
+			border: 1px solid black;
+			margin: auto;
+			position: relative;
+		}
+		.casa{
+			/* background-color: green; */
+			width: 20px;
+			height: 20px;
+			/* border: 1px solid black; */
+			float: left;
+			font-size: 33%;
+
+		}
+		.casa.branca{
+			background-color: lightgreen;
+			color: yellow;
+			border: 1px solid lightgreen;
+		}
+		.casa.preta{
+			background-color: black;
+			color: white;
+			border: 1px solid black;
+		}
+		.peça{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 20px;
+			height: 20px;
+			border: 1px dotted white;
+			line-height: 20px;
+			text-align: center;
+		}
+		.peça.branca{
+			color: red;
+		}
+		.peça.preta{
+			color: blue;
+		}
+		#cavalo-preto-1{
+			left: 22px;
+		}
+	</style>
+</head>
+<body>
+	<div class="tabuleiro" >
+		<div class="casa branca">A1</div>
+		<div class="casa preta">A2</div>
+		<div class="casa branca">A1</div>
+		<div class="casa preta">A2</div>
+		<div class="casa branca">A1</div>
+		<div class="casa preta">A2</div>
+		<div class="casa branca">A1</div>
+		<div class="casa preta">A2</div>
+
+	</div>
+		
+	
+	
+</body>
+</html>
