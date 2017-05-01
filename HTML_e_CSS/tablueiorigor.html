@@ -7,26 +7,33 @@
 	<link rel="stylesheet" href="">
 	<style>
 		.tabuleiro{
-			width: 300px;
-			height: 160px;
+			width: 176px;
+			height: 176px;
 			border: 1px solid black;
 			margin: auto;
 			position: relative;
 		}
 		.casa{
-			/* background-color: green; */
-			width: 30px;
-			height: 30px;
-			/* border: 1px solid black; */
+			width: 20px;
+			height: 20px;
 			float: left;
 			font-size: 33%;
-
 		}
 		.casa.branca{
-			background-color: lightgreen;
-			color: yellow;
-			border: 1px solid lightgreen;
+			background-color: lightblue;
+			color: black;
+			border: 1px solid lightblue;			
 		}
+		#C5:nth-child(5){
+			background-color: red;			
+ 			
+}
+
+		#C2:nth-child(2) {
+			background-color: white;
+ 			
+ 			
+}
 		.casa.preta{
 			background-color: black;
 			color: white;
@@ -55,78 +62,93 @@
 </head>
 <body>
 	<div class="tabuleiro">
+	<div class="linha-1">
+	    <div id="C1" class="casa branca">1</div>
+	    <div id="C2" class="casa  preta">2</div>
+	    <div id="C3" class="casa branca">3</div>
+	    <div id="C4" class="casa preta">4</div>
+	    <div id="C5" class="casa branca">5</div>
+	    <div id="C6" class="casa preta">6</div>
+	    <div id="C7" class="casa branca">7</div>
+	    <div id="C8" class="casa  preta">8</div>
+    </div>
 
-    <div class="casa branca">A1</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
-    
-    <div class="casa branca">C3</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
+    <div class="linha-2">
+    	<div class="casa branca">9</div>
+	    <div class="casa  preta">10</div>
+	    <div class="casa branca">11</div>
+	    <div class="casa preta">12</div>
+	    <div class="casa branca">13</div>
+	    <div class="casa preta">14</div>
+	    <div class="casa branca">15</div>
+	    <div class="casa  preta">16</div>
+	</div>
 
-    <div class="casa branca">C3</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
+    <div class="linha-3">
+	    <div class="casa branca">17</div>
+	    <div class="casa  preta">18</div>
+	    <div class="casa branca">19</div>
+	    <div class="casa preta">20</div>
+	    <div class="casa branca">21</div>
+	    <div class="casa preta">22</div>
+	    <div class="casa branca">23</div>
+	    <div class="casa  preta">24</div>
+	</div>
 
-    <div class="casa branca">C3</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
+	<div class="linha-4">
+	    <div class="casa branca">25</div>
+	    <div class="casa  preta">26</div>
+	    <div class="casa branca">27</div>
+	    <div class="casa preta">28</div>
+	    <div class="casa branca">29</div>
+	    <div class="casa preta">30</div>
+	    <div class="casa branca">31</div>
+	    <div class="casa  preta">32</div>
+	</div>
 
-    <div class="casa branca">C3</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
+	<div class="linha-5">
+	    <div class="casa branca">33</div>
+	    <div class="casa  preta">34</div>
+	    <div class="casa branca">35</div>
+	    <div class="casa preta">36</div>
+	    <div class="casa branca">37</div>
+	    <div class="casa preta">38</div>
+	    <div class="casa branca">39</div>
+	    <div class="casa  preta">40</div>
+	</div>
 
-    <div class="casa branca">C3</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
+	<div class="linha-6">
+	    <div class="casa branca">41</div>
+	    <div class="casa  preta">42</div>
+	    <div class="casa branca">43</div>
+	    <div class="casa preta">44</div>
+	    <div class="casa branca">45</div>
+	    <div class="casa preta">46</div>
+	    <div class="casa branca">47</div>
+	    <div class="casa  preta">48</div>
+	</div>
 
-    <div class="casa branca">C3</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
+	<div class="linha-7">
+	    <div class="casa branca">49</div>
+	    <div class="casa  preta">50</div>
+	    <div class="casa branca">51</div>
+	    <div class="casa preta">52</div>
+	    <div class="casa branca">53</div>
+	    <div class="casa preta">54</div>
+	    <div class="casa branca">55</div>
+	    <div class="casa  preta">56</div>
+	</div>
 
-    <div class="casa branca">C3</div>
-    <div class="casa  preta">B1</div>
-    <div class="casa branca">C1</div>
-    <div class="casa preta">A2</div>
-    <div class="casa branca">B2</div>
-    <div class="casa preta">C2</div>
-    <div class="casa branca">A3</div>
-    <div class="casa  preta">B3</div>
+    <div class="linha-8">
+	    <div class="casa branca">57</div>
+	    <div class="casa  preta">58</div>
+	    <div class="casa branca">59</div>
+	    <div class="casa preta">60</div>
+	    <div class="casa branca">61</div>
+	    <div class="casa preta">62</div>
+	    <div class="casa branca">63</div>
+	    <div class="casa  preta">64</div>
+	</div>
 
     <div id="bispo-branco-1" class="peça branca">&#9815;</div>
     <div id="cavalo-preto-1" class="peça  preta">&#9822;</div>
