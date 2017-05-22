@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>exercicios3</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		var p1={
+			nome:"wagner",
+			altura:1.71,
+			idade:28
+		};
+		// console.log(p1);
+		// console.log(p1.nome);
+		// p1.idade= p1.idade +1;
+		// console.log(p1.idade);
+		var p2={ };
+		// console.log(p2);
+		p2.nome="bletrano";
+		// console.log(p2);
+		p2.altura=1.67;
+		p2.idade=22;
+		// console.log(p2);
+		maisVelho(p1,p2);
+		function maisVelho(a,b){
+				if (a.idade > b.idade)
+				console.log(a.nome);
+			
+			else
+				console.log(b.nome);
+		}
+
+
+		
+		var p3 ={ nome:"Olando", idade:232, altura:1.78};
+		maisVelho(p2,p3);
+		maisVelho(p3,p2);
+
+		function maisVelho2(a,b){
+			if (a.idade > b.idade) {
+				return a;
+			}
+			else{
+				return b;
+			}
+		}
+		console.log(maisVelho2(p1,p2).nome);
+		console.log(maisVelho2(p1,maisVelho2(p2,p3)).nome);
+
+	</script>
+</body>
+</html>
