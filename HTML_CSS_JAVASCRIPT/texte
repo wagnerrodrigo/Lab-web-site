@@ -1,0 +1,8 @@
+#include <stadio.h>
+#include <math.h>
+
+int main()
+{
+	printf("olha mundo!!! o meu sub funiciona!!!!\n");
+	return 0;
+}

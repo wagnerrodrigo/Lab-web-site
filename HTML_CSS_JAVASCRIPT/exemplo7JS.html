@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Exemplo 07</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Exemplo 07</h1>
+	<h2>Múltiplos de 2</h2>
+	<ul></ul>
+
+	<h2>Múltiplos de 3</h2>
+	<ul></ul>
+
+	<h2>outros</h2>
+	<ul></ul>	
+
+	<script>
+		var lista2 = document.body.children[2];
+		var lista3 = document.body.children[4];
+		var listaOutros = document.body.children[6];
+
+		// var item1 = document.createElement("li");
+		// item1.innerHTML ="1";
+		// listaOutros.appendChild(item1);
+
+		// var item2 = document.createElement("li");
+		// item2.innerHTML ="2";
+		// lista2.appendChild(item2);
+
+		// var item3 = document.createElement("li");
+		// item3.innerHTML ="3";
+		// lista3.appendChild(item3);
+		for( var i = 1; i < 10; i++ ){
+		var item = document.createElement("li");
+		item.innerHTML =i;
+	
+		if (i % 2 ==0) {
+		lista2.appendChild(item);
+		}else if( i % 3 == 0){
+			lista3.appendChild(item);
+		}else{
+			listaOutros.appendChild(item);
+		}
+	}
+	</script>
+</body>
+</html>
