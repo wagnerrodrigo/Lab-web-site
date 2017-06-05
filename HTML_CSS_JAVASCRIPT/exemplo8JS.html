@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Exemplo 08</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Exemplo 08</h1>
+	<p>A soma de de <var>4</var> e <var>3</var> e <output>?</output>.</p> 
+
+	<script>
+		// localiza elementos de entrada
+		var vars = document.getElementsByTagName("var");
+		var eA = vars[0];
+		var eB = vars[1];
+		// localiza elementos de saida
+		var outputs = document.getElementsByTagName("output");
+		// var eOutuput = document.getElementsByTagName("output")[0];
+		var eOutput = outputs[0];
+		// realiza cáluclo e outras perações 
+		var a = parseInt(eA.innerHTML);
+		var b = parseInt(eB.innerHTML);
+		var soma = a+b;
+		// Imprime o resultado
+		eOutput.innerHTML = soma;
+	</script>
+</body>
+</html>

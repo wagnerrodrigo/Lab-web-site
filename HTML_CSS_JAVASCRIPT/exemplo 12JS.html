@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Exemplo 12</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Exemplo 12</h1>
+	<p>A soma de <var>2</var> e <var>3</var> é <output>?</output></p>
+	<button>Calcular</button>
+	<script>
+		// localizar entradas
+		// var valor = document.getElementsByTagName("var");
+		// var inicial = Number(valor[0].innerHTML);
+		// var final = Number(valor[1].innerHTML);
+
+
+		var entradas = document.getElementsByTagName("var");
+		var numero1= entradas[0];
+		var numero2= entradas[1];
+		var botao = document.getElementsByTagName("button")[0];
+		
+		//localizar  saidas
+		var saida = document.getElementsByTagName("output")[0];
+
+
+		//realizar caluculos registros do eventos
+		// botao.addEventListener("click", function() {
+		// 	saida.innerHTML = Number(numero1.innerHTML) + Number(numero2.innerHTML);
+		// })
+
+
+		// outra forma
+		botao.addEventListener("click", function() {
+			var A = Number(numero1.innerHTML);
+			var B = Number(numero2.innerHTML);
+			var C = A + B ;
+			saida.innerHTML = C;
+		})
+	</script>
+</body>
+</html>

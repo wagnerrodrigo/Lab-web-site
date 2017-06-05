@@ -77,7 +77,7 @@ body{
 	12.5%{
 		transform: translate(50px) scale(0.6);
 	}
-	25%{
+	-25%{
 		transform: translate(110px);
 	}
 	37.5%{

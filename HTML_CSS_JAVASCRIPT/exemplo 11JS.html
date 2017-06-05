@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>exemplo 11</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Exemplo 11</h1>
+	<button>Botão A</button>
+	<button>Botão B</button>
+	<button>Botão C</button>
+
+	<script>
+		var botoes = document.getElementsByTagName("Button");
+		var botaoA = botoes [0];
+		var botaoB = botoes [1];
+		var botaoC = botoes [2];
+
+		function mensagemA(){
+			console.log("O botão  FOI CLICADO!");
+		}
+		botaoA.addEventListener("click", mensagemA);
+
+		function mensagemB(){
+			console.log("O botão B hahahahahahaha");
+		}
+		botaoB.addEventListener("click", mensagemB);
+
+		botaoC.addEventListener("click", function(){
+			console.log("o botão C foi clicado")
+		})
+		// function mensagemC(){
+		// 	console.log("O botão C RSRSRSRSRSRRS o/");
+		// }
+		// botaoC.addEventListener("click", mensagemC)
+	</script>
+</body>
+</html>
