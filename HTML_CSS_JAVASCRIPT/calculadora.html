@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="">
+
+	<style>
+		table{
+			border: 0.25em solid grey;
+			background-color: lightblue;
+		}
+		#igual{
+			position:center;		}
+	</style>
+</head>
+<body>
+	<h1>Calculadora</h1>
+	<table>
+		<!-- <caption>HASLKJHLAKFJSHLKAJFH</caption> -->
+		<thead>
+			<tr>
+				<output>_____</output> <output></output> <output>-----</output>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><button>9</button></td>
+				<td><button>8</button></td>
+				<td><button>7</button></td>
+				<td><button>/</button></td>
+			</tr>
+			<tr>
+				<td><button>6</button></td>
+				<td><button>5</button></td>
+				<td><button>4</button></td>
+				<td><button>*</button></td>
+			</tr>
+			<tr>
+				<td><button>3</button></td>
+				<td><button>2</button></td>
+				<td><button>1</button></td>
+				<td><button>-</button></td>
+			</tr>
+			<tr>
+				<td><button>#</button></td>
+				<td><button>0</button></td>
+				<td><button>x</button></td>
+				<td><button>+</button></td>
+			</tr>
+
+			<tr>
+				<td><button>=</button></td>
+				<td><button>C</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script>
+		// Localizar entradas
+		var Calbotoes = document.getElementsByTagName("button");
+		var botao9 = Calbotoes[0];
+		var botao8 = Calbotoes[1];
+		var botao7 = Calbotoes[2];
+		var botaoDiv = Calbotoes[3];
+
+		var botao6 = Calbotoes[4];
+		var botao5 = Calbotoes[5];
+		var botao4 = Calbotoes[6];
+		var botaoMul = Calbotoes[7];
+
+		var botao3 = Calbotoes[8];
+		var botao2 = Calbotoes[9];
+		var botao1 = Calbotoes[10];
+		var botaoSub = Calbotoes[11];
+		
+		var botaoVel = Calbotoes[12];
+		var botao0 = Calbotoes[13];
+		var botaoX = Calbotoes[14];
+		var botaoSom = Calbotoes[15];
+		
+		var botaoIgu = Calbotoes[16];
+		var botaoCLS = Calbotoes[17];
+
+		// localizar saidas
+		var saida1 = document.getElementsByTagName("output")[0];
+		var saida2 = document.getElementsByTagName("output")[1];
+		var saida3 = document.getElementsByTagName("output")[2];
+
+		botao9.addEventListener("click", function(){
+			var num9 = Number(botao9.innerHTML);
+			var val = num9;
+			saida1.innerHTML = val;
+		});
+
+		botao8.addEventListener("click", function(){
+			var num8 = Number(botao8.innerHTML);
+			var val = num8;
+			saida2.innerHTML = val;
+		});
+
+
+		botaoSom.addEventListener("click", function(){
+			var opaSom = "+"
+			saida3.innerHTML = opaSom;
+		});
+
+		// realizar calculos
+		botaoSom.addEventListener("click", function(){
+				var A = Number(botao9.innerHTML);
+				var B = Number(botao8.innerHTML);
+				var C = A + B;
+				saida1.innerHTML = C;
+				})
+
+			botaoSub.addEventListener("click", function(){
+				var A = Number(botao9.innerHTML);
+				var B = Number(botao8.innerHTML);
+				var C = A - B;
+				saida2.innerHTML = C;
+				})
+		
+			botaoDiv.addEventListener("click", function(){
+				var A = Number(botao9.innerHTML);
+				var B = Number(botao8.innerHTML);
+				var C = A / B;
+				saida2.innerHTML = C;
+				})
+
+			botaoMul.addEventListener("click", function(){
+				var A = Number(botao9.innerHTML);
+				var B = Number(botao8.innerHTML);
+				var C = A * B;
+				saida2.innerHTML = C;
+				})
+
+		// function operacao(){
+		// 	while{
+
+		// 	}
+		// }
+
+	</script>
+</body>
+</html>
