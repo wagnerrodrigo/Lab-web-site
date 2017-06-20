@@ -21,7 +21,7 @@
 		<!-- <caption>HASLKJHLAKFJSHLKAJFH</caption> -->
 		<thead>
 			<tr>
-				<output>_____</output> <output></output> <output>-----</output>
+				<output contenteditable>valor 1 </output> <output contenteditable>Sinal </output><output>valor 2</output>
 			</tr>
 		</thead>
 		<tbody>
@@ -97,21 +97,21 @@
 		botao8.addEventListener("click", function(){
 			var num8 = Number(botao8.innerHTML);
 			var val = num8;
-			saida2.innerHTML = val;
+			saida3.innerHTML = val;
 		});
 
 
-		botaoSom.addEventListener("click", function(){
-			var opaSom = "+"
-			saida3.innerHTML = opaSom;
-		});
+		// botaoSom.addEventListener("click", function(){
+		// 	var opaSom = "+"
+		// 	saida2.innerHTML = opaSom;
+		// });
 
 		// realizar calculos
 		botaoSom.addEventListener("click", function(){
 				var A = Number(botao9.innerHTML);
 				var B = Number(botao8.innerHTML);
 				var C = A + B;
-				saida1.innerHTML = C;
+				saida2.innerHTML = C;
 				})
 
 			botaoSub.addEventListener("click", function(){
@@ -127,9 +127,9 @@
 				var C = A / B;
 				saida2.innerHTML = C;
 				})
-
+			
 			botaoMul.addEventListener("click", function(){
-				var A = Number(botao9.innerHTML);
+				var A = Number(botao9.innerText);
 				var B = Number(botao8.innerHTML);
 				var C = A * B;
 				saida2.innerHTML = C;

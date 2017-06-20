@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Exemplo 12</h1>
-	<p>A soma de <var contenteditable>2</var> e <var contenteditable>3</var> é <output>?</output></p>
+	<p><span>A soma</span> de <var contenteditable>2</var> e <var contenteditable>3</var> é <output>?</output></p>
 	<button>+</button>
 	<button>-</button>
 	<button>*</button>
@@ -30,6 +30,7 @@
 
 		//localizar  saidas
 		var saida = document.getElementsByTagName("output")[0];
+		var saida1 = document.getElementsByTagName("span")[0];
 
 
 		//realizar caluculos registros do eventos
@@ -44,18 +45,21 @@
 			var B = Number(numero2.innerHTML);
 			var C = A + B ;
 			saida.innerHTML = C;
+			saida1.innerHTML = "A soma";
 		})
 			botao1.addEventListener("click", function() {
 			var A = Number(numero1.innerHTML);
 			var B = Number(numero2.innerHTML);
 			var C = A - B ;
 			saida.innerHTML = C;
+			saida1.innerHTML = "A subitração";
 		})
 			botao2.addEventListener("click", function() {
 			var A = Number(numero1.innerHTML);
 			var B = Number(numero2.innerHTML);
 			var C = A * B ;
 			saida.innerHTML = C;
+			saida1.innerHTML ="A multiplicaçao";
 		})
 
 			botao3.addEventListener("click", function() {
@@ -63,6 +67,7 @@
 			var B = Number(numero2.innerHTML);
 			var C = A / B ;
 			saida.innerHTML = C;
+			saida1.innerHTML ="A diviçao";
 		})
 
 
